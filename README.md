@@ -30,10 +30,10 @@ MAXCLIENTS | Sets the server maxclients | 22
 `docker run -d --name opentdm1 -p 27910:27910/tcp -p 27910:27910/udp guikolt/q2frag`
 
 ### Spawns an opentdm server on port 27911 with custom settings
-`docker run -d --name opentdm2 -e SERVERNAME="FRAG.com.br - OpenTDM Server" -e "RCON_PASSWORD=chupeta" -e "ADMIN_PASSWORD=baleia" -p 27911:27910/tcp -p 27911:27910/udp guikolt/q2frag`
+`docker run -d --name opentdm2 -e SERVERNAME="FRAG.com.br - OpenTDM Server" -e RCON_PASSWORD="chupeta" -e ADMIN_PASSWORD="baleia" -p 27911:27910/tcp -p 27911:27910/udp guikolt/q2frag`
 
 ### Spawns a duel server on port 27912 with custom settings
-`docker run -d --name duel -e SERVERNAME="FRAG.com.br - Duel" -e "GAMEMODE=duel" -e "RCON_PASSWORD=chupeta" -e "ADMIN_PASSWORD=baleia" -p 27912:27910/tcp -p 27912:27910/udp guikolt/q2frag`
+`docker run -d --name duel -e SERVERNAME="FRAG.com.br - Duel" -e GAMEMODE="duel" -e RCON_PASSWORD="chupeta" -e ADMIN_PASSWORD="baleia" -p 27912:27910/tcp -p 27912:27910/udp guikolt/q2frag`
 
 # Monitoring server logs
 
